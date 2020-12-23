@@ -1,3 +1,7 @@
+# Pytorch implementation of U-Net(++)
+### For EC523 at BU: Trained to segment neurons in calcium imaging data. 
+Needs improvement as it suffers from overfitting currently.
+
 neuron.py: Data preprocessing algorithm, including histogram equalization, normalization and data size cropping.
 dataset.py : Used to generate neuron training and validation dataset. The data is composed of three parts: input neuron image, input pixel-wise mask and generated one-hot vector named target used for training. The path used in ‘Mydataset’ leads to the preprocessed npy file.
 losses.py: Containing BCEdice loss used for training.
